@@ -1,0 +1,55 @@
+// todo: add reset.css ???
+
+// VARIABLES
+$media__breckpoint: 768px
+$color__primary: #fc766a
+
+
+@import common/base
+
+
+h1, h2
+  text-transform: uppercase
+
+a
+  text-decoration: none
+  color: $color__primary
+// .lead
+//   font-size: 1.5rem
+//   line-height: 1.6
+//   margin: 0 0 2rem 0
+// p
+//   line-height: 1.4
+//   margin: 0 0 1rem 0
+  
+img
+  width: 100%
+  height: auto
+
+input
+  background: none
+  border: none
+  // border-bottom: 4px solid #000
+  color: #000
+  &::placeholder
+    color: #000
+button
+  border: none
+  
+
+@import common/typography
+
+@import common/common
+  
+@import common/buttons
+@import common/bg
+@import components/browser-mockup
+  
+@import components/popup
+@import common/preloader
+@import layout/header
+@import layout/footer
+  
+@import components/hero
+@import components/works
+ 

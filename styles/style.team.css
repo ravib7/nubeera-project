@@ -1,0 +1,212 @@
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.gray {
+  color: #a5a5a5;
+}
+
+.team{
+  margin:40px;
+}
+
+.team-member {
+  margin: 15px 0;
+  padding: 0;
+}
+
+.team-member figure {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.team-member figure img {
+  min-width: 100%;
+}
+
+.team-member figcaption p {
+  font-size: 16px;
+}
+
+.team-member figcaption ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-member figcaption ul {
+  visibility: visible;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.team-member figcaption ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.team-member h4 {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.team-member figcaption {
+  padding: 50px;
+  color: transparent;
+  background-color: transparent;
+  position: absolute;
+  z-index: 996;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption {
+  visibility: visible;
+  color: #fff;
+  /* hover color here */
+  background: #121255;
+  /* background: rgba(230, 78, 62, 0.3); */
+  /* Primary color, can be changed via colors.css */
+
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption ul li a:hover {
+  color: rgba(49, 49, 49, .97);
+}
+
+.team-member figure img {
+  -webkit-transform: scale(1) rotate(0) translateY(0);
+  -moz-transform: scale(1) rotate(0) translateY(0);
+  -o-transform: scale(1) rotate(0) translateY(0);
+  -ms-transform: scale(1) rotate(0) translateY(0);
+  transform: scale(1) rotate(0) translateY(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.team-member figure:hover img {
+  -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+  transform: scale(1.1) rotate(1deg) translateY(12px);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.section-team{
+  margin: 50px auto;
+}
+.section-team h2{
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+.section-team h2::after{
+  content: '';
+  background: #2389f2;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.section-team .row{
+  margin-top: 30px;
+}
+.section-team .row .col-md-4{
+  margin: 40px auto;
+}
+.profile{
+  padding: 70px 10px 10px;
+  border: 2px solid #2389f2;
+  border-radius: 100px 0 100px 0;
+  transition: .3s;
+}
+.profile:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.5); */
+  border: 3px solid #2389f2;
+}
+/* .profile img{
+  top: -60px;
+  position: absolute;
+  left: calc(50% - 50px);
+} */
+.user{
+  width: 120px;
+  height: 120px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile h4{
+  font-size: 20px;
+  margin-top: 15px;
+  /* color: #fff; */
+}
+.profile h5{
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  /* color: #fff; */
+}
+blockquote{
+  font-size: 1rem;
+  line-height: 1.8rem;
+  /* color: #fff; */
+  padding: 1rem;
+}
+
+
+
+/* .wrapper{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #2389f2;
+}
+.section-padding{
+  padding: 60px 0;
+  margin: 5% auto 0;
+}
+.img-area{
+  width: 100px;
+  height: 100px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.img-area img{
+  width: 100%;
+}
+.single-testi{
+  background: #2389f2;
+  padding: 5%;
+  margin-right: 5px;
+  text-align: center;
+  
+} */

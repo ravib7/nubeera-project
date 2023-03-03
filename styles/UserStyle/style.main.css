@@ -1,0 +1,87 @@
+.mt-small{
+  margin-top:0.35rem;
+}
+
+.pt-small{
+    padding-top:0.08rem;
+}
+
+.transition{
+  transition: all 0.15s ease-out;
+}
+
+.hover-invert-img:hover img.invert-me{
+    filter:invert(1);
+}
+
+.img-hover-animate img{
+  transition:margin 0.3s ease-out;
+  margin-right:0px;
+}
+
+.img-hover-animate:hover img{
+  margin-right:15px;
+}
+
+.border-3{
+    border-width: 3px;
+}
+
+.play-btn-pos{
+    top:50%;
+    left:50%;
+    margin-left:-32px;
+    margin-top:-32px;
+}
+
+.badge-filter{
+    filter:grayscale(1) brightness(1.15);
+    opacity:0.5;
+}
+
+.badge-filter:hover{
+    filter:grayscale(0) brightness(1);
+    opacity:1;
+}
+
+#menuBtn{
+    margin-top:-0.35rem;
+    opacity:0.8;
+    transform:scale(0.9);
+    transition:all 0.2s ease-out;
+}
+
+#menuBtn:hover{
+    opacity:1;
+    transform:scale(0.96);
+}
+
+
+#sideNav{
+    transition:all 0.3s ease-in-out;
+}
+
+#app.opened #sideNav{
+    left: 0rem;
+    margin-left: 0rem;
+}
+
+#app.opened #sideNavBg{
+    content:'';
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    position:fixed;
+    z-index:10;
+    background:rgba(0, 0, 20, 0.4);
+}
+
+#app #closeSideNav{
+    transition:all 0.3s ease-in-out;
+    margin-right:-6rem;
+}
+
+#app.opened #closeSideNav{
+    margin-right: 2.5rem;
+}

@@ -1,0 +1,48 @@
+
+.site-header
+  position: fixed
+  top: 0
+  background: rgba(255,255,255,0)
+  z-index: 111
+  width: 100%
+  transition: background-color 600ms, height 600ms 
+  height: 80px
+  .row
+    justify-content: space-between
+    align-items: center
+  .branding
+    width: 80px
+    .logo
+      display: block
+      background: $color__primary
+      width: 80px
+      height: 80px
+      color: #fff
+      text-align: center
+      line-height: 80px
+      transition: height 600ms, width 600ms, line-height 600ms
+  a
+    text-transform: uppercase
+  nav
+    display: none
+    a
+      color: #000
+      text-decoration: none
+      &:hover
+        color: $color__primary
+    a + a
+      margin-left: 1em
+      
+  .btn
+    display: block
+    line-height: 36px
+    padding: 0 12px
+    border-radius: 50px
+      
+  
+@media (min-width: $media__breckpoint)
+  .site-header nav
+    display: block
+    a + a
+      margin-left: 1.5em
+  

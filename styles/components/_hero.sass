@@ -1,0 +1,62 @@
+.hero
+  // background-color: $color__primary
+  // background: url(https://images.unsplash.com/photo-1485342550928-0d4a6c568c07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) center
+  // background-image: url(https://images.unsplash.com/photo-1496824000084-3b2dc58685d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+  // background-size: cover
+  
+  background: radial-gradient(#c2c2c2 8%, transparent 8%), white
+  background-position: 0 0, 25px 25px
+  background-size: 25px 25px
+  
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  // color: $color__primary
+  h2
+    text-transform: uppercase
+    
+    
+    
+.slide-ksc
+  transform: perspective(1000px)
+  transform-style: preserve-3d
+  .text
+    padding-right: 10%
+  h2
+    .lead
+      font-size: 1.4em
+  .images
+    position: relative
+  .desk
+    position: absolute
+    bottom: 0
+    left: -20%
+    z-index: 11
+    transform: translateZ(100px)
+  .deskHd
+    transform: translateZ(20px)
+
+    
+@media (max-width:  992px)
+  .slide-ksc 
+    h2
+      .lead
+        font-size: 1em
+  
+@media (max-width:  $media__breckpoint)
+  .slide-ksc 
+    .text
+      padding-right: 0
+      text-align: center
+    // .buttons
+      // justify-content: center  
+    h2
+      .lead
+        font-size: 1em
+    .images
+      padding-left: 20%  
+      padding-top: 10%
+    .desk
+      width: 70%
+      left: 0%

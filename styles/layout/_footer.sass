@@ -1,0 +1,91 @@
+
+.site-footer
+  background: $color__primary
+  color: #fff
+  padding: 3em 0;
+  h4
+    text-transform: uppercase
+    letter-spacing: 0.2em
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      padding: 0
+      margin: 0
+  p
+    margin: 0
+    line-height: 2.2
+  a
+    color: #fff
+    line-height: 2.2
+    
+    
+    
+  @media (max-width:  $media__breckpoint)
+    text-align: center
+    
+    
+.prefooterCTA
+  padding: 0
+  margin: 0
+  img
+    display: block
+    padding: 0
+    margin: 0
+//   width: 100%
+//   height: 100vh
+//   background: url(https://tympanus.net/Development/MockupSlideshow/img/mockup4.jpg) no-repeat
+
+
+
+.glitch
+  color: white
+  // font-family: sans-serif
+  // font-weight: 800
+  position: relative
+  // font-size: 100px
+  // padding: 30px
+
+.glitch::before, .glitch::after
+  // padding: 30px
+  color: white
+  content: "&copy; Artem Horbenko"
+  position: absolute
+  width: 100%
+  height: 100%
+  // background: black
+  overflow: hidden
+  top: 0
+
+.glitch::before
+  left: 3px
+  text-shadow: -2px 0 red
+  animation-name: glitch-animation-1
+  animation-duration: 2s
+  animation-timing-function: linear
+  animation-delay: 0s
+  animation-iteration-count: infinite
+  animation-direction: reverse-alternate
+
+.glitch::after
+  left: -3px
+  text-shadow: -2px 0 blue
+  animation-name: glitch-animation-2
+  animation-duration: 2s
+  animation-timing-function: linear
+  animation-delay: 0s
+  animation-iteration-count: infinite
+  animation-direction: reverse-alternate
+  
+@keyframes glitch-animation-1
+  $steps: 20
+  @for $i from 0 through $steps 
+    #{percentage($i*(1/$steps))} 
+      clip: rect(random(150)+px, 350px, random(150)+px, 30px)
+    
+@keyframes glitch-animation-2
+  $steps: 20
+  @for $i from 0 through $steps 
+    #{percentage($i*(1/$steps))} 
+      clip: rect(random(150)+px, 350px, random(150)+px, 30px)

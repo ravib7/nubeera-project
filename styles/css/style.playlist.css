@@ -1,0 +1,111 @@
+
+nav.archive-links {
+  background-color: #FFF;
+  box-sizing: content-box;
+  padding: 0;
+  margin: auto;
+  max-width: 100%;
+  /* Ordered list with custom counter */
+  /* Style the title, date & comments of each entry */
+}
+nav.archive-links ol {
+  counter-reset: li;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+  margin: 0;
+  padding: 0px;
+}
+nav.archive-links ol li {
+  float: left;
+  clear: left;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+nav.archive-links ol,
+nav.archive-links ol li,
+nav.archive-links ol li a {
+  display: block;
+}
+nav.archive-links ol li a {
+  font-size: 11px;
+  height: 59px;
+  position: relative;
+  text-decoration: none;
+}
+nav.archive-links ol li .main-image:after,
+nav.archive-links ol li .no-main-image:after {
+  color: #b7b7b7;
+  content: counter(li, decimal-leading-zero);
+  counter-increment: li;
+  font-size: 25px;
+  line-height: 59px;
+  height: 59px;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+nav.archive-links li .main-image,
+nav.archive-links li .no-main-image {
+  float: left;
+  margin-right: 1.5em;
+  width: 60px;
+  height: 60px;
+  background: #e6e6e6;
+}
+nav.archive-links li .main-image {
+  background-image: url('../../img/vdo.jpeg');
+  background-size: cover;
+  background-position: center center;
+}
+nav.archive-links a:link,
+nav.archive-links a:visited,
+nav.archive-links a:hover,
+nav.archive-links a:active {
+  color: #000000;
+}
+nav.archive-links ol li a:hover .main-image:after,
+nav.archive-links ol li a:hover .no-main-image:after {
+  color: #007bff;
+}
+nav.archive-links ol li a:active .main-image:after,
+nav.archive-links ol li a:active .no-main-image:after,
+nav.archive-links ol li.active a .main-image:after,
+nav.archive-links ol li.active a .no-main-image:after {
+  color: #777;
+}
+nav.archive-links li + li {
+  border-top: 1px solid #d9d9d9;
+}
+nav.archive-links li span {
+  display: block;
+  line-height: 1.5em;
+}
+nav.archive-links span.link-title {
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  padding-top: 0.6875em;
+  font-size: 15px;
+}
+nav.archive-links span.link-excerpt {
+  color: #c3c3c3;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  nav.archive-links ol li .main-image:after,
+  nav.archive-links ol li .no-main-image:after {
+    visibility: hidden;
+  }
+
+  nav.archive-links span.link-excerpt {
+    visibility: hidden;
+  }
+
+
+}

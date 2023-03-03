@@ -1,0 +1,143 @@
+
+#popup
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  transition: opacity 400ms
+  z-index: 1111
+  opacity: 0
+  display: none
+.popup__wrap
+  background: linear-gradient(316deg, #ffdf79, #e371d4, #9771e3)
+  background-size: 600% 600%
+  // display: flex
+  align-items: center
+  height: 100%
+  min-height: 100vh
+  justify-content: center
+  animation: gradientShift 10s ease infinite
+
+.popup
+  color: #aaa
+  max-width: 400px
+  width: 100%
+  // height: 340px
+  background-color: white
+  border-radius: 5px
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1)
+  padding: 24px
+  position: relative
+.popup__title
+  color: #000
+  font-size: 1.5em
+  font-weight: bold
+  text-align: center
+.popup__desc
+  font-size: .8em
+  line-height: 1.4em
+  text-align: center
+  
+.popup__footer
+  margin-top: 2em
+  color: #000
+  text-align: center
+  p
+    margin: .5em 0
+  a
+    font-size: 1.2em
+    &:hover
+      color: #338AFF
+  
+    
+.close
+  animation: gradientShift 5s ease infinite
+  cursor: pointer
+  position: absolute
+  top: 16px
+  right: 16px
+  path.close-filled
+    fill: #aaa
+    transition: fill .4s
+  &:hover
+    path.close-filled
+      fill: $color__primary
+
+@keyframes gradientShift
+  0%
+    background-position: 24% 0%
+
+  50%
+    background-position: 77% 100%
+
+  100%
+    background-position: 24% 0%
+  
+  
+$bg-color: #424242
+$hl-color: #2196F3
+$muted-color: mix(white, $bg-color, 70%)
+$trans-time: 300ms
+$width: 100%
+
+.form_material-group
+  position: relative
+  margin: 2.5rem 0
+  min-width: 300px
+textarea
+  resize: none
+
+input, textarea
+  background: none
+  color: $muted-color
+  font-size: 18px
+  padding: 10px 10px 10px 5px
+  display: block
+  width: $width
+  border: none
+  border-radius: 0
+  border-bottom: 1px solid $muted-color
+  &:focus
+    outline: none
+  &:focus ~ label, &:valid ~ label
+    top: -14px
+    font-size: 12px
+    color: $hl-color
+  &:focus ~ .bar:before
+    width: $width
+
+label
+  color: $muted-color
+  font-size: 16px
+  font-weight: normal
+  position: absolute
+  pointer-events: none
+  left: 5px
+  top: 10px
+  transition: $trans-time ease all
+
+.bar
+  position: relative
+  display: block
+  width: $width
+  &:before
+    content: ''
+    height: 2px
+    width: 0
+    bottom: 0px
+    position: absolute
+    background: $hl-color
+    transition: $trans-time ease all
+    left: 0%
+  
+  
+.material-form
+  margin-top: 2em
+  text-align: center
+  .btn
+    line-height: 48px
+    margin-top: 1em
+    
+  input:focus
+    outline: none

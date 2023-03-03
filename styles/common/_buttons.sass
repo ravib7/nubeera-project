@@ -1,0 +1,45 @@
+@keyframes anime 
+  0%
+    background-position: 0% 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
+  
+.btn
+  font-weight: 700
+  text-transform: uppercase
+  // width: 300px
+  // height: 100px
+  // font-size: 30px
+  text-align: center
+  // line-height: 100px
+  color: rgba(255,255,255,0.9)
+  // border-radius: 50px
+  background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5)
+  background-size: 600%
+  animation: anime 16s linear infinite
+  display: block
+  
+.cta, .site-content, .worksPromo, .popup
+  .btn
+    display: inline-block
+    line-height: 64px
+    padding: 0 24px
+    border-radius: 50px  
+    @media (max-width: 700px)
+      padding: 0 12px
+      line-height: 48px
+ 
+
+.cta
+  .row
+    justify-content: center
+    a
+      disply: block
+      margin: 8px
+    
+@media (max-width: $media__breckpoint)
+  .btn
+    font-size: 14px
+    padding: 0 12px

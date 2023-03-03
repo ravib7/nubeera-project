@@ -1,0 +1,9 @@
+#section {
+  width: 500px;
+  height: 400px;
+  word-wrap: break-word;
+}
+
+.moretext {
+  display: none;
+}

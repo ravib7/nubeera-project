@@ -1,0 +1,59 @@
+textarea
+    {
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        outline: none;
+    } 
+    .size{
+        height:55px;
+        width:55px;
+    } 
+    .size1{
+        height:100px;
+        width:100px;
+    } 
+    .size4{
+        height:40px;
+        width:40px;
+    } 
+    .projcard-tagbox {
+        position: absolute;
+        bottom: 3%;
+        font-size: 14px;
+        cursor: default;
+        user-select: none;
+        pointer-events: none;
+    }
+    .projcard-tag {
+        display: inline-block;
+        background: #E0E0E0;
+        color: #777;
+        border-radius: 3px 0 0 3px;
+        line-height: 26px;
+        padding: 0 10px 0 23px;
+        position: relative;
+        margin-right: 20px;
+        cursor: default;
+        user-select: none;
+        transition: color 0.2s;
+    }
+    .projcard-tag::before {
+        content: '';
+        position: absolute;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+        height: 6px;
+        left: 10px;
+        width: 6px;
+        top: 10px;
+    }
+    .projcard-tag::after {
+        content: '';
+        position: absolute;
+        border-bottom: 13px solid transparent;
+        border-left: 10px solid #E0E0E0;
+        border-top: 13px solid transparent;
+        right: -10px;
+        top: 0;
+    }

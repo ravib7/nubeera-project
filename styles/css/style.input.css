@@ -1,0 +1,55 @@
+::placeholder {
+color: white;
+opacity: 1;
+}
+
+    .padd{
+      padding-left:10px;
+    }
+
+  .form_material-group {
+    position: relative;
+    margin-top: 10px;
+
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input, textarea {
+    background: none;
+    color: #323232;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #c6c6c6;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+  }
+
+  input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+  }
+
+  input:focus ~ .bar:before, textarea:focus ~ .bar:before {
+    width: 100%;
+  }
+
+  label {
+    color: #c6c6c6;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+  }
