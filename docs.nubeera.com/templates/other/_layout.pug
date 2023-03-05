@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+
+head
+  meta(charset="utf-8")
+  title Artem Horbenko - Exclusive Web Services
+
+  link(rel="stylesheet" href="lib/bootstrap-grid.processed.css")
+  
+  link(rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css")
+  
+  // Default values
+  - var body_classes = ['en', 'page']
+  
+  block head
+  
+  link(rel="stylesheet" href="styles/style.processed.css")
+  
+
+body(class=body_classes)
+    
+  include _mixins.pug
+  
+  #preloader
+  
+  include layout/_header.pug
+  
+  block content
+  
+  include layout/_footer.pug
+  
+  block script
+  
+  
+  script(type="text/javascript", src="lib/vanilla-tilt.min.js")
+  
+  script(type="text/javascript", src="https://unpkg.com/aos@2.3.0/dist/aos.js")
+  
+  script(src="js/main.js")
+  
+
+   

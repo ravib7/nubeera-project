@@ -1,0 +1,19 @@
+.text-med
+{
+    color: #2C3E50;
+}
+ul li a{
+    color: #2C3E50;
+}
+li ul a, li ul li
+{
+    color: gray;
+}
+ul li a:hover
+{
+    color: #2C3E50;
+}
+li ul a:hover
+{
+    color: gray;
+}

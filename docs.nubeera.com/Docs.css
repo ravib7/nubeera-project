@@ -1,0 +1,88 @@
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+ul#lists {
+    width: 100%;
+    position: absolute;
+    left: ;
+    background: white;
+    box-shadow: 1px 1px 10px gray;
+    height: auto;
+    z-index: 1;
+}
+
+ul#lists li {
+    display: none;
+    list-items: none;
+    width: 107%;
+    z-index: 1;
+    position: relative;
+    left: -7%;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0.5rem 3rem 0.5rem 1.5rem;
+    height: 2.4rem;
+    line-height: 1.5;
+    color: #919aaa;
+    background-color: yello;
+    border-radius: ;
+}
+
+ul#lists li:hover {
+    background: gainsboro;
+    padding-left: 1.6rem;
+}
+
+ul#lists li a {
+    text-decoration: none;
+    color: #919aaa;
+}
+
+.mic-btn {
+    color: black;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 5rem;
+    top: 0.90rem;
+    margin-right: 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.clear-btn {
+    color: #828d9f;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 3rem;
+    top: 0.70rem;
+    margin-right: 0;
+}
+
+button#clearBtn {
+    display: none;
+}

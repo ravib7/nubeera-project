@@ -1,0 +1,57 @@
+#popup.popup__wrap
+  .popup
+    #popupClose.close
+      svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24')
+        path.close-filled(d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z')
+        path(d='M0 0h24v24H0z', fill='none')
+
+    .popup__title Свяжитесь с нами!
+    .popup__desc Заполните все поля ниже, чтобы мы могля связаться с вами и обсудить все детали.
+    form.material-form
+    
+      
+      .form_material-group
+        input(type="text" required).form_material-input
+        span.highlight
+        span.bar
+        label Ваш Email
+
+      .form_material-group
+        input(type="text" required).form_material-input
+        span.highlight
+        span.bar
+        label Номер телефона
+        
+      button(type="submit").btn Отправить
+    .popup__footer
+      p Так же можете воспользоваться контактами:
+      p
+        a(href="mailto:artemhorbenko@gmail.com") artemhorbenko@gmail.com
+        br 
+        a(href="tel:+380506327647") 380506327647
+
+
+
+footer.site-footer
+  .container
+    .row
+      .col-6.col-sm-4
+        h4 &nbsp;
+        a(href="/").glitch
+          | &copy; Artem Horbenko
+      .col-6.col-sm-4
+        h4 Навигация
+        ul
+          //- li: a(href="/") Главная
+          li: a(href="/projects.html") Проекты
+          li: a(href="/") Услуги
+          li: a(href="/") О нас
+          //- li: a(href="#") Новости
+          li: a(href="/" onclick="openPopup();return false;") Контакты
+      .col-6.col-sm-4
+        h4 Контакты
+        ul
+          li: a(href="mailto:artemhorbenko@gmail.com") Email
+          li: a(href="tel:+380506327647") Телефон
+          li: a(href="https://www.facebook.com/artemhorbenko") Facebook
+          li: a(href="https://ua.linkedin.com/in/horbenko") LinkedIn

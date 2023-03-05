@@ -1,0 +1,28 @@
+- var projectsList1 = [ {title: 'Eugene Miller', url: 'https://eugene-miller.com/', img: 'https://horbenko.com/mockups/miller-2018.png', desc: 'Верстка Landing. Разработка анимаций'}, {title: 'XXL.UA', url: '//xxl.ua', img: 'https://horbenko.com/mockups/xxl-ua-2018.png', desc: 'Редизайн и обновление 2018'}, {title: 'KSC Forum 2015', url: 'http://forum2015.kyivsmartcity.com', img: 'https://horbenko.com/mockups/kscf-2015.png', desc: 'Разработка Landing Page за 72 часа'} ];
+
+section#works
+  .container.text-center
+    h2 Наши работы
+    
+    .row.projectsGrid
+      article.col-sm-6
+        a(href='#' target='_blank')
+          img(src='https://horbenko.com/mockups/slide-ksc-desktop.png', data-tilt, data-tilt-scale="1.1")
+          h3.entry-title Kyiv Smart City
+        .entry-content
+          p Редизайн и Обновление 2019
+      article.col-sm-5
+        a(href='#' target='_blank')
+          img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/jkr-home.png', data-tilt, data-tilt-scale="1.1")
+          h3.entry-title Joker
+        .entry-content
+          p Верстка и Разработка Анимаций
+        
+    .row.projectsGrid
+      each val, index in projectsList1
+        article.col-sm-4
+          +projectCard(val.title, val.url, val.desc, val.img)
+          
+          
+    p.text-center(data-aos="fade-up"): a(href="/projects.html", data-tilt, data-tilt-scale="1.1").btn Больше примеров
+        

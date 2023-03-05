@@ -1,0 +1,139 @@
+mixin serviceItem(title, imgURL, desc)
+  .col.col-sm-6.col-md-4(data-aos="fade-up")
+    img(src= imgURL, alt= title)
+    h4= title
+    - if( desc != '' )
+      p= desc
+  
+
+section.services.bg-dots#services
+  .container
+    h2.text-center Мы разрабатываем
+    .row
+      .col.col-6
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/picture.png")
+        h3 Леидинги и Промо сайты
+        p Одностраничные и маленекие сайты направленные на маркетинг продуктов, товаров и услуг, компаний либо организаций. 
+      .col.col-6
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/browser.png")
+        h3 Сайты-визитки и Корп. сайты 
+        p Сайты для маленького и не большого бизнеса, с задачей предствить компанию в сети интернет и автоматизиривать некоторые процессы.
+
+      .col.col-6
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/layout.png")
+        h3 Новостные и Диджитал издания
+        p Сайты-платформы для СМИ, блогов, полит. деятелей, лидеров мнений, глянцевых изданий. UI (дизайн), CMS (админка), Функционал для оптимизации вашей работы. Нагруженность до 1000 подключений одновременно.
+      .col.col-6
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/template.png")
+        h3 Интернет-магазины и каталоги
+        p Сайты для онлайн комерции расчитанные до 3000 ед. товара. Каталог, фильтры и сортировка, доставка и оплата, корзина и атрибуты товаров.
+      //- .col.col-4: h3 Веб приложения - SPA, PWA
+section.services
+  .container
+    h2.text-center Наши услуги
+    .row
+      +serviceItem('Разработка под ключ','https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/coding.png')
+      +serviceItem('Аудит сайта', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/testing.png', 'Помощь с UX на вашем сайте')
+      +serviceItem('Создание сайта по теме-шаблону (заранее разработанное)', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/color.png')
+      +serviceItem('Доработка, починка', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/virus.png') 
+      +serviceItem('Редизайн, обновление', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/web.png')
+      +serviceItem('Защита и безопастность сервера и данных', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/safe.png')
+      +serviceItem('Поддержка и Сопровождение продукта', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/update.png')
+      +serviceItem('Ускорение работы сайта', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/certificate.png')
+      +serviceItem('Внутреняя SEO-оптимизация', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/search.png')
+      +serviceItem('Создание адаптивной версии сайта', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/resize.png')
+      +serviceItem('Разработка веб-сайтов и веб-приложений', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/data.png')
+      +serviceItem('Разработка документаций и технического задания', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/tasks.png')
+      +serviceItem('Разработка макетов дизайна сайта', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/wireframe.png')
+      +serviceItem('Прототипирование', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/concept.png', 'Разработка прототипов веб-сайтов и веб-приложений')
+      +serviceItem('Верстка страничек сайта по макету', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/html.png')
+      +serviceItem('Разработка функционала для сайта', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/algorithm.png')
+      +serviceItem('Разработка и настройка админки','https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/admin.png')
+      +serviceItem('Публикация в сети интернет', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/905112/domain.png', 'покупка домена, хостинга, настрока сервера')
+
+
+//- section.services
+  .container
+    .row
+      .col-12.col-sm-4
+        img(src="https://page-speed.ru/img/articles/W3C1.png")
+      .col-12.col-sm-4
+        img(src="http://www.vivarenov.com/images/css3.png")
+      .col-12.col-sm-4
+        img(src="https://www.w3.org/2016/11/mobile-checker-disabled/img/mobile-checker.svg")
+        
+      
+      .col-12.col-sm-4
+        img(src="https://seoukraine.com.ua/wp-content/uploads/2018/11/518344fa99d7db74f01bbf30a544dcd43542617b.png")
+      .col-12.col-sm-4
+        img(src="http://fundamental.c5hub.com/application/files/2114/3386/2216/Google-Mobile-Friendly-Logo.png")
+      .col-12.col-sm-4
+        img(src="https://www.fastcomet.com/upload/tutorial/7aa651161b26b0d3a94b9fe46aec9c2d.png")
+      .col-12.col-sm-4
+        img(src="https://www.geckoboard.com/assets/pingdom.png")
+      .col-12.col-sm-4
+        img(src="https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse.png")
+      .col-12.col-sm-4
+        img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa1qZ4_OYHgIGcy7k_mrljpJku8I8UnDTMJmoIgYx1gZinwQ32")
+      .col-12.col-sm-4
+        img(src="https://embo.com.ua/wp-content/uploads/2018/09/google_webmasters.png")
+      .col-12.col-sm-4
+        img(src="https://internet-reklama.uz/wp-content/uploads/2016/12/Google-My-Business-Logo.jpg")
+      .col-12.col-sm-4
+        img(src="https://cdn-images-1.medium.com/max/428/1*reW4bKGzZrlH34uOxIBxRA@2x.png")
+        
+        
+        
+    //- h2.text-center Наши преимущества
+    //- ul
+      li Качественный код, валидация на стандарты
+      li Высокая скорость загрузки и работы сайта
+      li Безопастность и зашищенность сервера и данных
+      li Разработка в краткие сроки
+      li Адаптивный дизайн и UX best practices
+      li Разрабатывают исключительно наши специалисты (никаких посредников) 
+    
+    
+//- section#process.services
+  .container
+    h2 Процесс разработки
+    .row
+      .services-item
+        h3 Постановка задачи
+        p Lorem ipsum
+      .services-item
+        h3 Дизайн макетов и прототипов
+        p Lorem ipsum
+      .services-item
+        h3 Верстка и разработка
+        p Lorem ipsum
+      .services-item
+        h3 Подготовка к публикации
+        p Lorem ipsum
+      .services-item
+        h3 Внедрение проекта
+        p Lorem ipsum
+      .services-item
+        h3 Релиз
+        p Lorem ipsum
+        
+    h3 Стэк технология
+        
+//- section#services.services
+  .container
+    h2.text-center Мы разрабатываем
+    .row
+      .col-6.services-item
+         h3 Landing pages и промо сайты
+         p It is a single web page, created specifically for the purposes of a marketing or advertising campaign.
+      .col-6.services-item
+          h3 Сайты-визитки и Корпоративные веб-сайты
+          p Having business card website is a great way to promote yourself in the world wide web.
+          p Having a website is a great way of promoting your small business and reaching more customers.
+      .col-6.services-item
+          h3 Веб-сайты для Диджитал изданий.
+          p Для Медиа и Диджитал изданий, СМИ, Новостных порталов, Блогов мы спроектируем, создадим и разработаем Дизайн, Front-End, Back-End. 
+          p Полный цикл разработки с высоким качеством продукта, который удовлетворит ваши потребности и ваши сайты будут отличаться от конкурентов в лучшую сторону. 
+      .col-6.services-item
+          h3 Веб приложение: SPA, PWA
+          p It is a client–server computer program in which the client (including the user interface and client-side logic) runs in a web browser.

@@ -1,0 +1,165 @@
+html
+{
+    font-size: 100%;
+}
+body
+{
+   background-color: #F2F4F4;
+}
+h2
+{
+    font-size: 32px;
+}
+.side-panel-box, #side-panel-box
+{
+    height: 100%;
+    font-size: 0.8125rem;
+    box-shadow: 0px 0px 1.5625rem -0.9375rem gray;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    padding-top: 5.625rem;
+    padding-bottom: 3.125rem;
+    z-index: 5;
+    display: inline-block;
+    width:25%!important;
+    background: white;
+    transition: 0.5s;
+}
+#side-panel-toggle
+{
+    position: relative;
+    width: auto;
+    top: 10px;
+     left: 80%;
+    transition: 0.5s;
+    border-radius: 50%;
+    padding: 5px 15px;
+    color: gray;
+    box-shadow: 0px 3px 1px 0px #dcdde1;
+    z-index: 6;
+}
+.side-panel
+{
+   max-height: 100%;
+   overflow-x: hidden;
+   position: absolute;
+   padding-right:1.5rem!important;
+   padding-left:1.5rem!important;
+   padding-top:3rem!important;
+   padding-bottom:3rem!important;
+}
+#top-nav
+{
+    display: none;
+}
+.content-box
+{
+   position: relative;
+   right: 0;
+   margin-left: 24%;
+   word-wrap: break-word;
+   transition: 0.5s;
+}
+.body-content
+{
+    outline: gainsboro solid 0.0625rem;
+    border-radius: 0.3125rem;
+    margin:3rem!important;
+    background: white;
+}
+.body-text
+{
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    color: #4B4B4B;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: black;
+}
+.breadcrumb
+{
+    background: none;
+    font-size: 13px;
+}
+pre
+{
+   background: black;
+   color: white;
+   padding: 0.725rem 2.25rem;
+}
+div.code-title
+{
+    background-color: #444444;
+    color: #F0C162;
+    padding: 0.325rem 1rem;
+    font-weight: bold;
+}
+   @media (max-width: 750px)
+   {
+        html
+        {
+            font-size: 50%;
+        }
+        .side-panel-box, #side-panel-box, #side-panel-toggle
+        {
+            display: none; 
+        }
+        .content-box
+        {
+            margin-left: 18%;
+        }
+        .body-content
+        {
+            margin: 1rem;
+        }
+        .content-box
+        {
+            width:100%!important;
+            margin-left: 0px;
+        }
+   }
+    @media (max-width: 600px) {
+
+    html{
+        font-size: 50%;
+    }
+    .side-panel-box, #side-panel-box
+    {
+        display: none;
+    }
+    #side-panel-toggle
+    {
+        display: none;
+    }
+    #top-nav
+    {
+        display: block;
+        background: white;
+    }
+    #sm-side-panel-toggle
+    {
+        background: none;
+    }
+    .modal
+    {
+        font-size: large;
+    }
+    .content-box
+    {
+        width:100%!important;
+        margin-left: 0px;
+        font-size: large;
+
+    }
+    .body-content
+    {
+        margin: 0rem!important;
+    }
+    .body-text
+    {
+        padding: 2rem!important;
+    }
+}

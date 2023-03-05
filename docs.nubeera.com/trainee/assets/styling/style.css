@@ -1,0 +1,160 @@
+html {
+    font-size: 90%;
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+body {
+    background: whitesmoke;
+}
+
+#sidebar.hide .sidebarContent {
+    width: 55px;
+}
+
+#sidebar {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.sidebarContent {
+    width: 200px;
+    top: 6.25rem;
+    transition: all 0.3s ease;
+}
+
+@media (min-width:768px) {
+    .sidebarContent {
+        width: 280px;
+    }
+}
+
+/* .content {
+    margin-top: 100px;
+    margin-left: 280px;
+    width: calc(100% - 280px);
+} */
+
+nav#sidebar div.sidebarContent div.sidebarHeader {
+    height: 3.75rem;
+}
+
+nav#sidebar.hide div.sidebarContent div.sidebarHeader p {
+    transition: all 0.3s ease;
+}
+
+nav#sidebar.hide div.sidebarContent div.sidebarHeader p {
+    opacity: 0;
+}
+
+nav#sidebar div.sidebarContent div.sidebarHeader span#toggle-btn {
+    top: 50%;
+    right: 8px;
+    transform: translateY(-70%);
+    transition: all 0.4s ease;
+    background: whitesmoke;
+    padding: 6px 13px;
+    color: gray;
+}
+
+nav#sidebar div.sidebarContent div.sidebarHeader span#toggle-btn:hover {
+    box-shadow: 0px 0px 3px gainsboro;
+}
+
+nav#sidebar div.sidebarContent ul.nav-list li {
+    position: relative;
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+nav#sidebar div.sidebarContent ul.nav-list li:hover {
+    background: gainsboro;
+}
+
+nav#sidebar div.sidebarContent ul.nav-list li.active {
+    background: gainsboro;
+}
+
+nav#sidebar div.sidebarContent ul.nav-list li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    /* background: #11101D; */
+}
+
+nav#sidebar div.sidebarContent ul.nav-list li a span.link_icon {
+    color: gray;
+    min-width: 50px;
+    text-align: center;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.125rem;
+    border-radius: 12px;
+}
+
+nav#sidebar div.sidebarContent ul.nav-list li a span.link_name {
+    color: gray;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+nav#sidebar.hide div.sidebarContent ul.nav-list li a span.link_name {
+    opacity: 0;
+}
+
+#main_content {
+    position: relative;
+    top: 6.25rem;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-size: 1rem;
+}
+
+@media (min-width:768px) {
+    #main_content {
+        position: relative;
+        top: 6.25rem;
+        left: 280px;
+        width: calc(100% - 280px);
+        min-height: 100vh;
+        transition: all 0.3s ease;
+        z-index: 2;
+    }
+}
+
+#sidebar.hide~#main_content {
+    left: 55px;
+    width: calc(100% - 55px);
+}
+
+.chat-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    position: fixed;
+    bottom: 28px;
+    right: 35px;
+    width: auto;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.chat-btn:hover {
+    opacity: 1;
+}

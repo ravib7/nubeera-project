@@ -1,0 +1,8 @@
+mixin projectCard(title, link, desc, img)
+  a(href= link)
+    .browser-mockup.with-url(data-tilt, data-tilt-scale="1.1")
+      img(src= img)
+    h3.entry-title= title
+  .entry-content
+    p= desc
+  //- p: a(href= link).btn Ссылка на проект

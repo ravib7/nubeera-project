@@ -1,0 +1,255 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+html
+{
+    font-size: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+@media (min-width:768px) {
+  .navbar {
+    padding: .5rem 3rem;
+  }
+}
+
+div.navbar-cont {
+  box-shadow: -10px -10px 15px gray;
+  z-index: 10;
+}
+
+.navbar-nav li.nav-item a.nav-link {
+  color: gray;
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.search-btn {
+  outline: none;
+  border: none;
+  background: #3399ff;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  height: calc(1.5em + .75rem + 2px);
+}
+
+.search-btn:hover {
+  color: #e6f2ff;
+}
+
+.search-input {
+  border-radius: 100px;
+  background: whitesmoke;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-left: 3rem;
+}
+
+.form-inline {
+  margin-right: 3.125rem;
+}
+
+.no-transition {
+  -webkit-transition: height 0;
+  -moz-transition: height 0;
+  -ms-transition: height 0;
+  -o-transition: height 0;
+  transition: none;
+}
+
+span.signup-btn a {
+  background: transparent;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 2px solid #3399ff;
+  outline: none;
+  color: #3399ff;
+  cursor: pointer;
+}
+
+span.signup-btn a:hover {
+  box-shadow: 0px 0px 15px -5px #3399ff;
+}
+
+header.header {
+  background-image: url("../media/images/img2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 60vh;
+}
+
+.welcome-text {
+  line-height: 2.2rem;
+  letter-spacing: 0.8px;
+  margin-top: 7rem !important;
+}
+
+div.card {
+  height: 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+
+section.card-content {
+  background: #edf6ff;
+  transform: translateY(-30px);
+  height: 100%;
+  /* transition: 2s; */
+  z-index: 10;
+}
+
+span.title-icon {
+  font-weight: 400;
+  line-height: 1.15;
+  box-sizing: border-box;
+  margin-right: .5rem !important;
+  background: white;
+  color: #007bff;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  display: inline-block;
+}
+
+div.card-description {
+  transform: translateY(-12.5rem);
+  position: relative;
+  transition: .4s;
+  visibility: hidden;
+}
+
+a.card-link-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+div.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 15px 20px gainsboro;
+  z-index: 10;
+  /* border: 2px solid  #005ce6; */
+}
+
+div.card:hover>div.card-body>div.card-description {
+  transform: translateY(-0.9375rem);
+  visibility: visible;
+}
+
+div.card:hover>div.card-body>section.card-content {
+  background-image: linear-gradient(to bottom left, #0049b8, #267bfc, #cde0fc);
+  height: auto;
+  border: 2px solid #005ce6;
+
+}
+
+.site-footer {
+  background: linear-gradient(to left top, rgb(16, 52, 73), rgb(26, 57, 87));
+  line-height: 24px;
+  font-weight: 400;
+  display: block;
+  color: #737373;
+}
+
+.site-footer ul {
+  /* list-style: none; */
+  color: #fcfafa;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer ul li {
+  color: #737373;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer ul li a, .site-footer a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff !important;
+  line-height: 2.2;
+}
+
+.site-footer h6 {
+  margin-bottom: .5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer p.about {
+  padding-top: 10px;
+  margin: 0;
+  line-height: 2.2;
+}
+
+.site-footer hr {
+  color: #737373;
+  height: 0;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+ul.social-icons li {
+  display: inline-block;
+}
+
+.site-footer ul.social-icons li a {
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  transition: all .2s linear;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.youtube:hover {
+  background-color: #c4302b;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}

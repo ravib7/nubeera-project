@@ -1,0 +1,21 @@
+@media (min-width:768px) {
+  .navbar {
+    padding: .5rem 3rem;
+  }
+}
+.navbar
+{
+  background: white;
+}
+.navbar-nav li.nav-item a.nav-link {
+  color: gray;
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.profile-btn::after {
+  content: none;
+}
