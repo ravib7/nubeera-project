@@ -1,17 +1,22 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>NubeEra</title>
 <link rel="icon" type="image/png" href="../img/logo.ico">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="../styles/style.nav1.css">
 <link rel="stylesheet" href="../styles/style.footer.css">
+<link rel="stylesheet" href="login btn.css">
+
+
 <style media="screen">
     .move_down{
       padding-top:40%
@@ -38,16 +43,16 @@
 <div class="collapse navbar-collapse center" id="navbarSupportedContent">
 <ul class="navbar-nav ml-auto py-4 py-md-0">
 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-<a class="nav-link" href="../products.html">Products</a>
+<a class="nav-link" href="products.html">Products</a>
 </li>
 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-<a class="nav-link" href="../services.html">Services</a>
+<a class="nav-link" href="services.html">Services</a>
 </li>
 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-<a class="nav-link" href="../training.html">Training</a>
+<a class="nav-link" href="training.html">Training</a>
 </li>
 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-<a class="nav-link" href="../contactUs.html">Contact Us</a>
+<a class="nav-link" href="contactUs.html">Contact Us</a>
 </li>
 </ul>
 </div>
@@ -65,29 +70,26 @@
 <br><br><br><br>
 <form id="login" class="form-horizontal signin" onsubmit="if (!window.__cfRLUnblockHandlers) return false; return authenticate('login'); return false;" data-cf-modified-d0ac1f2f108b6c839b711ace-="">
 <div class="form-wrap" style="position: relative;">
-<h2>Login</h2>
-<div class="form-group">
-<label id="message"></label>
-<div class="relative">
-<input class="form-control" id="name" name="email" type="email" required autofocus="" title="" autocomplete="" placeholder="Username">
-<i class="fa fa-user"></i>
-</div>
-</div>
+<h2>Login in ilms</h2>
 <div class="form-group">
 
-<div class="relative">
-<input id="myinput" name="password" class="form-control" type="password" required placeholder="Password">
-<i class="fa fa-key"></i>
-</div>
-<span class="pull-right"><small><a href="#" id="showhide">show / hide</a></small></span>
-<span class="pull-left"><small><a href="#">Forgot Password?</a></small></span>
-</div>
-<div class="login-btn">
-<input type="submit" hidden>
-<a href="#"><button class="movebtn movebtnsu" type="">Login <i class="fa fa-fw fa-lock"></i></button></a>
-<div class="relative"><hr><span class="login-text">or login with</span></div><br>
-<div class="clearfix"></div>
-<div class="">
-</form>
-<div class="social-btn clearfix">
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+      <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-login_uri="https://ilms.nubeera.com/social-auth/login/google-oauth2/"
+         data-auto_prompt="false">
+      </div>
+      <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+      </div>
+
+      <button class="glow-on-hover" type="button"><a href="https://ilms.nubeera.com/adminlogin">Admin</a></button>
+      
+  </div>
 <script src="rocket-loader.min.js" data-cf-settings="d0ac1f2f108b6c839b711ace-|49" defer=""></script>

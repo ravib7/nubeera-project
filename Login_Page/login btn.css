@@ -1,0 +1,87 @@
+
+ @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+ .g_id_signin {
+  width: 250px;
+  height: 39px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.g_id_signin:hover {
+  box-shadow: 0 0 9px #4285f4;
+}
+.g_id_signin:active {
+  background: #1669F2;
+}
+
+
+/*   Admin button    */
+
+.glow-on-hover {
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+ .glow-on-hover {
+    width: 220px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+ .glow-on-hover:hover {
+  box-shadow: 0 0 7px #4285f4;
+} 
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg,  #002bff, );
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
